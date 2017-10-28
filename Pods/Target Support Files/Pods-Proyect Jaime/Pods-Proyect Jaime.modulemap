@@ -1,0 +1,6 @@
+framework module Pods_Proyect_Jaime {
+  umbrella header "Pods-Proyect Jaime-umbrella.h"
+
+  export *
+  module * { export * }
+}
