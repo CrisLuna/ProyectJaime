@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		11DFFF2EAF170E974412D1ED /* Pods_Proyect_Jaime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EDBB8BC05FF52BE729938C8 /* Pods_Proyect_Jaime.framework */; };
+		536969B41FA4E33B008F8419 /* CLLightNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536969B31FA4E33B008F8419 /* CLLightNavigationController.swift */; };
+		536969B91FA4E7EF008F8419 /* CLColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536969B81FA4E7EF008F8419 /* CLColors.swift */; };
+		536969BB1FA4EBE3008F8419 /* CLLightNavigationControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536969BA1FA4EBE3008F8419 /* CLLightNavigationControllerDelegate.swift */; };
+		536969BE1FA4F450008F8419 /* CLLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536969BD1FA4F450008F8419 /* CLLoginViewController.swift */; };
 		53B379051F9B978900377A4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B379041F9B978900377A4E /* AppDelegate.swift */; };
 		53B379071F9B978900377A4E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B379061F9B978900377A4E /* ViewController.swift */; };
 		53B3790A1F9B978900377A4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53B379081F9B978900377A4E /* Main.storyboard */; };
@@ -37,6 +41,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		536969B31FA4E33B008F8419 /* CLLightNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLLightNavigationController.swift; sourceTree = "<group>"; };
+		536969B81FA4E7EF008F8419 /* CLColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLColors.swift; sourceTree = "<group>"; };
+		536969BA1FA4EBE3008F8419 /* CLLightNavigationControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLLightNavigationControllerDelegate.swift; sourceTree = "<group>"; };
+		536969BC1FA4F3A3008F8419 /* CLLogin.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = CLLogin.storyboard; path = "/Users/dcl16/Documents/ProyectJaime/Proyect Jaime/Modules/Login/Main/CLLogin.storyboard"; sourceTree = "<absolute>"; };
+		536969BD1FA4F450008F8419 /* CLLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLLoginViewController.swift; sourceTree = "<group>"; };
 		53B379011F9B978900377A4E /* Proyect Jaime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Proyect Jaime.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		53B379041F9B978900377A4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		53B379061F9B978900377A4E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -94,6 +103,83 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		536969AB1FA4E0E8008F8419 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				53B379041F9B978900377A4E /* AppDelegate.swift */,
+				53B3790D1F9B978900377A4E /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		536969AC1FA4E0F7008F8419 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				53B3790B1F9B978900377A4E /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		536969AD1FA4E0FF008F8419 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		536969AE1FA4E10B008F8419 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		536969AF1FA4E11C008F8419 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				536969B51FA4E7B0008F8419 /* Colors */,
+				536969B21FA4E2D9008F8419 /* Custom Views */,
+				536969B01FA4E17B008F8419 /* Login */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		536969B01FA4E17B008F8419 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				536969B11FA4E183008F8419 /* Main */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		536969B11FA4E183008F8419 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				536969BC1FA4F3A3008F8419 /* CLLogin.storyboard */,
+				53B379061F9B978900377A4E /* ViewController.swift */,
+				53B379081F9B978900377A4E /* Main.storyboard */,
+				536969BD1FA4F450008F8419 /* CLLoginViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		536969B21FA4E2D9008F8419 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				536969B31FA4E33B008F8419 /* CLLightNavigationController.swift */,
+				536969BA1FA4EBE3008F8419 /* CLLightNavigationControllerDelegate.swift */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		536969B51FA4E7B0008F8419 /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				536969B81FA4E7EF008F8419 /* CLColors.swift */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
 		53B378F81F9B978800377A4E = {
 			isa = PBXGroup;
 			children = (
@@ -119,11 +205,11 @@
 		53B379031F9B978900377A4E /* Proyect Jaime */ = {
 			isa = PBXGroup;
 			children = (
-				53B379041F9B978900377A4E /* AppDelegate.swift */,
-				53B379061F9B978900377A4E /* ViewController.swift */,
-				53B379081F9B978900377A4E /* Main.storyboard */,
-				53B3790B1F9B978900377A4E /* Assets.xcassets */,
-				53B3790D1F9B978900377A4E /* LaunchScreen.storyboard */,
+				536969AF1FA4E11C008F8419 /* Modules */,
+				536969AE1FA4E10B008F8419 /* Models */,
+				536969AD1FA4E0FF008F8419 /* Networking */,
+				536969AC1FA4E0F7008F8419 /* Assets */,
+				536969AB1FA4E0E8008F8419 /* Supporting Files */,
 				53B379101F9B978900377A4E /* Info.plist */,
 			);
 			path = "Proyect Jaime";
@@ -369,7 +455,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				53B379071F9B978900377A4E /* ViewController.swift in Sources */,
+				536969BE1FA4F450008F8419 /* CLLoginViewController.swift in Sources */,
 				53B379051F9B978900377A4E /* AppDelegate.swift in Sources */,
+				536969B91FA4E7EF008F8419 /* CLColors.swift in Sources */,
+				536969BB1FA4EBE3008F8419 /* CLLightNavigationControllerDelegate.swift in Sources */,
+				536969B41FA4E33B008F8419 /* CLLightNavigationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
